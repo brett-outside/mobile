@@ -65,7 +65,7 @@ The backup server is optimized for state persistence and quick lookup rather tha
         - Fallback to master server synchronization if the peer network quorum falls below a threshold.
  
 4. Master Server (Rust Back End) Specification
-5. 
+   
    4.1 Core Functions and API
     - API Endpoints:
         - Event Log Endpoint:
