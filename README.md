@@ -65,6 +65,7 @@ The backup server is optimized for state persistence and quick lookup rather tha
         - Fallback to master server synchronization if the peer network quorum falls below a threshold.
  
 4. Master Server (Rust Back End) Specification
+5. 
    4.1 Core Functions and API
     - API Endpoints:
         - Event Log Endpoint:
@@ -86,7 +87,7 @@ POST /node when a mobile instance registers or re-registers with the backup syst
         - High availability through database replication or clustering.
         - Data backup routines and monitoring for unusual patterns to pre-empt possible attacks.
  
-5. Communication Protocol and Data Flow
+6. Communication Protocol and Data Flow
    
    5.1 Communication Protocol
     - Peer-to-Peer Layer:
@@ -97,7 +98,7 @@ POST /node when a mobile instance registers or re-registers with the backup syst
         - The protocol supports reconciliation by comparing sequence numbers or timestamps.
    5.2 Data Flow Diagram (ASCII Representation)
   
-6. Security Considerations
+7. Security Considerations
    
    6.1 Secure Messaging
     - Encryption:
@@ -116,7 +117,7 @@ Application data and caches are segregated to prevent leakage between different 
     - Regular Security Audits:
 Both the mobile app and master server code undergo periodic security reviews and penetration testing.
  
-7. Implementation Roadmap
+8. Implementation Roadmap
 
    7.1 Mobile Front End (Kotlin)
     - Prototype UI:
@@ -137,7 +138,7 @@ Validate the architecture under simulated network conditions.
     - Security Hardening:
 Integrate stringent TLS configurations and conduct security audits.
  
-8. Summary and Further Considerations
+9. Summary and Further Considerations
     
 This specification outlines a hybrid, secure, and real-time mobile application architecture supporting dynamic visualization of network graphs with a distributed P2P backbone complemented by a master server for backup and recovery. Key innovation points include the tight integration of:
 - Distributed peer-to-peer event propagation, ensuring real-time responsiveness and resilience.
